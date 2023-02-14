@@ -158,6 +158,3 @@ dist
 /wsl$/
 
 !tsconfig.app.json
-
-/shared/ms-auth
-/shared/ms-base
