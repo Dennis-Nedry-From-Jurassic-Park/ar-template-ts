@@ -10,10 +10,12 @@
     "shared/*"
   ],
   "scripts": {
-    "------------ pnpm ------------": "",
+    "-------- pnpm common ------------": "",
     "pnpm:add": "npx pnpm add -g pnpm",
     "pnpm:setup": "npx pnpm setup",
-    "pnpm:install": "npx pnpm install",
+    "-------- pnpm package ----------": "",
+    "pnpm:add:p": "npx pnpm add lodash",
+    "pnpm:install": "npx pnpm -r install --recursive",
     "----------- docker -----------": "",
     "docker:run:stop:all": "docker stop $(docker ps -a -q)",
     "docker:run:ms:app": "docker-compose -f docker-compose.yml up -d",
@@ -25,7 +27,8 @@
     "doppler:login": "doppler login",
     "doppler:setup": "doppler setup",
     "----------- runners -----------": "",
-    "api-ti-orders": "ts-node packages/backend/apps/ms-atr/src/api.ti.orders.ts",
+    "main": "ts-node packages/backend/apps/ms-template/src/main.ts",
+    "exec": "doppler run -- ts-node packages/backend/apps/ms-template/src/main.ts",
     "build": "nest build",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -35,7 +38,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "rxjs": "^7.5.6"
+    "rxjs": "^7.5.6",
+    "ts-node": "^10.9.1",
+    "@types/node": "^18.11.18",
+    "typescript": "^4.8.4"
   },
+
   "packageManager": "pnpm@7.26.3"
 }
