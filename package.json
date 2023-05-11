@@ -14,7 +14,7 @@
     "pnpm:add": "npx pnpm add -g pnpm",
     "pnpm:setup": "npx pnpm setup",
     "-------- pnpm package ----------": "",
-    "pnpm:add:p": "npx pnpm add lodash",
+    "pnpm:add:p": "npx pnpm add -w lodash",
     "pnpm:install": "npx pnpm -r install --recursive",
     "----------- docker -----------": "",
     "docker:run:stop:all": "docker stop $(docker ps -a -q)",
