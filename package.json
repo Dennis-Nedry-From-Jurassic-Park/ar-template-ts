@@ -7,9 +7,20 @@
   "license": "Apache-2.0",
   "workspaces": [
     "packages/**",
-    "shared/*"
+    "shared/**"
   ],
   "scripts": {
+    "-------- git submodule -------": "",
+    "git submodule add ms-auth": "git submodule add --force https://github.com/Dennis-Nedry-From-Jurassic-Park/ms-auth.git shared/ms-auth",
+    "git submodule add ms-base": "git submodule add --force https://github.com/Dennis-Nedry-From-Jurassic-Park/ms-base.git shared/ms-base",
+    "1. add lib-msg-queue: worspace:^ to package.json": "",
+    "2. add lib-msg-queue: worspace:^ to package.json": "",
+    "git submodule add lib-msg-queue": "git submodule add --force https://github.com/Dennis-Nedry-From-Jurassic-Park/lib-msg-queue.git shared/lib-msg-queue",
+
+
+
+    "git submodule update": "git submodule update --init --recursive && git submodule foreach --recursive git pull origin main",
+    "git submodule sync": "git submodule sync",
     "-------- pnpm common ------------": "",
     "pnpm:add": "npx pnpm add -g pnpm",
     "pnpm:setup": "npx pnpm setup",
