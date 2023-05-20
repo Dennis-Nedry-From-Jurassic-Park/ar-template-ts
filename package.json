@@ -18,14 +18,14 @@
     "1. add lib-msg-queue: worspace:^ to package.json": "",
     "2. add lib-msg-queue: worspace:^ to package.json": "",
     "git submodule add lib-msg-queue": "git submodule add --force https://github.com/Dennis-Nedry-From-Jurassic-Park/lib-msg-queue.git shared/lib-msg-queue",
-
     "git submodule update": "git submodule update --init --recursive && git submodule foreach --recursive git pull origin main",
     "git submodule sync": "git submodule sync",
     "-------- pnpm common ------------": "",
     "pnpm:add": "npx pnpm add -g pnpm",
     "pnpm:setup": "npx pnpm setup",
     "-------- pnpm package ----------": "",
-    "pnpm:add:p": "npx pnpm add -w lodash",
+    "pnpm:add:p": "npx pnpm add -w -D arkit",
+    "pnpm:add:p:dev": "npx pnpm add -w arkit",
     "pnpm:install": "npx pnpm -r install --recursive",
     "----------- docker -----------": "",
     "docker:run:stop:all": "docker stop $(docker ps -a -q)",
@@ -49,12 +49,14 @@
     "test": "jest"
   },
   "dependencies": {
+    "@types/node": "^18.11.18",
     "rxjs": "^7.5.6",
     "ts-node": "^10.9.1",
-    "@types/node": "^18.11.18",
-    "typescript": "^4.8.4",
-    "tslib": "^2.5.0"
+    "tslib": "^2.5.0",
+    "typescript": "^4.8.4"
   },
-
+  "devDependencies": {
+    "arkit": "^1.6.4"
+  },
   "packageManager": "pnpm@7.26.3"
 }
