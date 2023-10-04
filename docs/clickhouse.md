@@ -26,3 +26,8 @@ https://websitelytics.top/blog/clickhouse-deployment/
 https://g-ek.com/dostup-k-fajlam-wsl-linux-v-windows10
 
 explorer.exe .
+
+network problems
+https://github.com/docker/for-win/issues/9272
+netcfg -d
+Get-WindowsOptionalFeature -online | ? featurename -like "IIS" | Disable-WindowsOptionalFeature -Online -Remove
