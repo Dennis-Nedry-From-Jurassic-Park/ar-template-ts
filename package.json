@@ -50,6 +50,7 @@
     "doppler:setup": "doppler setup",
     "----------- runners -----------": "",
     "exec": "doppler run -- ts-node src/exec.ts",
+    "nestjs:init": "npx nest g resource",
     "build": "nest build",
     "start": "nest start",
     "rimraf:dist": "rimraf dist/* --glob",
