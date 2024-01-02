@@ -48,6 +48,8 @@
     "----------- doppler -----------": "",
     "doppler:login": "doppler login",
     "doppler:setup": "doppler setup",
+    "----------- migrations -----------": "",
+    "migrations:create": "npx typeorm migration:create ./src/migrations/CreateDatabaseTg",
     "----------- runners -----------": "",
     "exec": "doppler run -- ts-node src/exec.ts",
     "nestjs:init": "npx nest g resource",
