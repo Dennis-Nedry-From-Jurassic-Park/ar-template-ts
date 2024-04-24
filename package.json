@@ -52,6 +52,7 @@
     "migrations:create": "npx typeorm migration:create ./src/migrations/CreateDatabaseTg",
     "----------- runners -----------": "",
     "exec": "doppler run -- ts-node src/exec.ts",
+    "main": "doppler run -- ts-node src/main.ts",
     "nestjs:init": "npx nest g resource",
     "build": "nest build",
     "start": "nest start",
